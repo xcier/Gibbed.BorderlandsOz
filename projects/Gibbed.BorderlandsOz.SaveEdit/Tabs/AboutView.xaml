@@ -92,6 +92,13 @@
             <LineBreak />
             <LineBreak />
             <Run Text="For anyone else I missed, you know who you are!" />
+            <LineBreak />
+            <LineBreak />
+            <Run Text="Edited by ProtoBuffers/Xcier-Freedom" />
+            <LineBreak />
+            <Run Text="Added PSVita + Switch Support" />
+            <LineBreak />
+            <Run Text="Added Moxxi Drinks (hopefully)" />
         </TextBlock>
     </Grid>
 </UserControl>

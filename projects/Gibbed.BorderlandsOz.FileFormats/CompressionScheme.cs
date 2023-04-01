@@ -27,5 +27,6 @@ namespace Gibbed.BorderlandsOz.FileFormats
         Invalid = 0,
         LZO = 1,
         Zlib = 2,
+        None = 4,
     }
 }

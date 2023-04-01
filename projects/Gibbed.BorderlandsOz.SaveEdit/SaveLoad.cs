@@ -69,11 +69,15 @@ namespace Gibbed.BorderlandsOz.SaveEdit
                     ffc => ffc.AddFilter("sav", this._FilterIndex == 1)
                               .WithDescription("PC Save Files")
                               .AddFilter("sav", this._FilterIndex == 2)
-                              .WithDescription("X360 Save Files")
+                              .WithDescription("Xbox 360 Save Files")
                               .AddFilter("sav", this._FilterIndex == 3)
-                              .WithDescription("PS3 Save Files")
+                              .WithDescription("PlayStation 3 Save Files")
                               .AddFilter("sav", this._FilterIndex == 4)
-                              .WithDescription("NVIDIA SHIELD Save Files"))
+                              .WithDescription("PlayStation Vita Save Files")
+                              .AddFilter("sav", this._FilterIndex == 5)
+                              .WithDescription("NVIDIA SHIELD Save Files")
+                              .AddFilter("sav", this._FilterIndex == 6)
+                              .WithDescription("Nintendo Switch Save Files"))
                 .WithFileDo(s => fileName = s)
                 .WithFilterIndexDo(i => filterIndex = i);
 
