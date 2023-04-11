@@ -188,7 +188,7 @@
                             Grid.Column="1"
                             Value="{Binding Path=ManufacturerGradeIndex, UpdateSourceTrigger=PropertyChanged}"
                             Minimum="0"
-                            Maximum="127" />
+                            Maximum="2147483647" Height="26" VerticalAlignment="Top" />
         <Label Grid.Row="5"
                Grid.Column="0"
                HorizontalContentAlignment="Right"
