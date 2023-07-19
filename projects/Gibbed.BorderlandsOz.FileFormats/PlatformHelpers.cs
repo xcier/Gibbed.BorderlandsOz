@@ -33,16 +33,18 @@ namespace Gibbed.BorderlandsOz.FileFormats
             switch (platform)
             {
                 case Platform.PC:
+                case Platform.PSVita:
                 case Platform.Shield:
-                {
-                    return Endian.Little;
-                }
+                case Platform.Switch:
+                    {
+                        return Endian.Little;
+                    }
 
                 case Platform.X360:
                 case Platform.PS3:
-                {
-                    return Endian.Big;
-                }
+                    {
+                        return Endian.Big;
+                    }
             }
 
             throw new ArgumentException("unsupported platform", nameof(platform));
@@ -52,17 +54,23 @@ namespace Gibbed.BorderlandsOz.FileFormats
         {
             switch (platform)
             {
+                case Platform.Switch:
+                    {
+                        return CompressionScheme.None;
+                    }
+
                 case Platform.PC:
                 case Platform.X360:
-                {
-                    return CompressionScheme.LZO;
-                }
+                    {
+                        return CompressionScheme.LZO;
+                    }
 
                 case Platform.PS3:
+                case Platform.PSVita:
                 case Platform.Shield:
-                {
-                    return CompressionScheme.Zlib;
-                }
+                    {
+                        return CompressionScheme.Zlib;
+                    }
             }
 
             throw new ArgumentException("unsupported platform", nameof(platform));

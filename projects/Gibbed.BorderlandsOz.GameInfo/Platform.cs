@@ -30,6 +30,8 @@ namespace Gibbed.BorderlandsOz.GameInfo
         X360,
         PS3,
         Shield,
+        PSVita,
+        Switch,
         // ReSharper restore InconsistentNaming
     }
 }

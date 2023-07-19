@@ -24,6 +24,7 @@ namespace Gibbed.BorderlandsOz.FileFormats
 {
     internal enum CompressionScheme
     {
+        None = 0,
         Invalid = 0,
         LZO = 1,
         Zlib = 2,

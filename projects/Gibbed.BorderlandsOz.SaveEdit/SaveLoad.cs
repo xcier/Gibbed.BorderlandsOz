@@ -67,13 +67,19 @@ namespace Gibbed.BorderlandsOz.SaveEdit
             var ofr = new MyOpenFileResult()
                 .FilterFiles(
                     ffc => ffc.AddFilter("sav", this._FilterIndex == 1)
-                              .WithDescription("PC Save Files")
+                              .WithDescription("PC")
                               .AddFilter("sav", this._FilterIndex == 2)
-                              .WithDescription("X360 Save Files")
+                              .WithDescription("X360")
                               .AddFilter("sav", this._FilterIndex == 3)
-                              .WithDescription("PS3 Save Files")
+                              .WithDescription("PS3")
                               .AddFilter("sav", this._FilterIndex == 4)
-                              .WithDescription("NVIDIA SHIELD Save Files"))
+                              .WithDescription("NVIDIA SHIELD")
+                              .AddFilter("sav", this._FilterIndex == 5)
+                              .WithDescription("Switch")
+                              .AddFilter("sav", this._FilterIndex == 6)
+                              .WithDescription("Decrypted PS4")
+                              .AddFilter("json", this._FilterIndex == 7)
+                              .WithDescription("SaveWizard"))
                 .WithFileDo(s => fileName = s)
                 .WithFilterIndexDo(i => filterIndex = i);
 
@@ -99,10 +105,12 @@ namespace Gibbed.BorderlandsOz.SaveEdit
                 Platform.X360,
                 Platform.PS3,
                 Platform.Shield,
+                Platform.Switch,
+                Platform.PSVita,
             };
 
             fileNameAction(fileName);
-            platformAction(filterIndex < 1 || filterIndex > 4
+            platformAction(filterIndex < 1 || filterIndex > 6
                                ? Platform.PC
                                : platforms[filterIndex]);
         }
@@ -118,6 +126,8 @@ namespace Gibbed.BorderlandsOz.SaveEdit
                 .FilterFiles(
                     ffc => ffc.AddFilter("sav", true)
                               .WithDescription("Save Files")
+                              .AddFilter("json")
+                              .WithDescription("SaveWizard")
                               .AddAllFilesFilter())
                 .WithFileDo(s => fileName = s);
 
