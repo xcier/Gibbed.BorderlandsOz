@@ -74,24 +74,6 @@
         </TextBlock>
         <TextBlock Grid.Row="2"
                    TextWrapping="Wrap"
-                   Margin="4">
-            <Run Text="With special thanks to..." />
-            <LineBreak />
-            <LineBreak />
-            <Run Text="The following people who went out of their way to support the developer:" />
-            <LineBreak />
-            <Run Text="— Erratum Mendelrock, Derch, imchillyb, MadWarrior, Man of Low Moral Fiber, SandyS1, spiff, Xhulifactor, and others who choose to remain anonymous." />
-            <LineBreak />
-            <LineBreak />
-            <Run Text="The following people who in some way contributed to the development of this save editor:" />
-            <LineBreak />
-            <Run Text="— cake, Crimor, dis_astranagant, DOMIN8, duncanfogg, evil0z, FasuXe, Foran, hi-ban, Jordan, Jusupov, Kryptos, Kyle873, Namidairo, NeuroticTurtle, pclifford, Septarius, Shyke, TechnoJacker, and zylche." />
-            <LineBreak />
-            <LineBreak />
-            <Run Text="And of course Gearbox Software, for creating Borderlands to begin with!" />
-            <LineBreak />
-            <LineBreak />
-            <Run Text="For anyone else I missed, you know who you are!" />
-        </TextBlock>
+                   Margin="4"><Run Text="Please support the official release and all of the original helpers/creators/testers."/><LineBreak/><Run/><LineBreak/><Run Text="This editor has been modified by ProtoBuffers"/><LineBreak/><Run/><LineBreak/><Run Text="This Borderlands the Pre-Sequel Save editor supports Nintendo Switch (just an option nvidia shield can open switch saves),  decrypted PS4 saves, and save wizard max advanced mode export saves. It also has a brand new tab just for creating hybrid weapons easily. "/><LineBreak/><Run/><LineBreak/><Run Text="Make sure to rename your exported file extension from .sav to .json when exporting or after! "/><LineBreak/><Run Text="When saving to PS4 advanced mode click on save as and change the file type to .json (look in lower left of file explorer)!"/></TextBlock>
     </Grid>
 </UserControl>
