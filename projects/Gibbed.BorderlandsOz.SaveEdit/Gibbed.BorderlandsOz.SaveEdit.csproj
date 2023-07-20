@@ -24,7 +24,6 @@
     <Optimize>true</Optimize>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Caliburn.Micro" Version="1.5.1" />
     <PackageReference Include="Extended.Wpf.Toolkit" Version="2.7.0" />
   </ItemGroup>
   <ItemGroup>
