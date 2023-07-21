@@ -203,13 +203,11 @@
                        Grid.Column="0"
                        HorizontalContentAlignment="Right"
                        Content="Head:" />
-                <ComboBox Grid.Row="1"
-                          Grid.Column="1"
-                          Margin="3"
-                          ItemsSource="{Binding Source={StaticResource GroupedHeadAssets}}"
-                          DisplayMemberPath="Name"
-                          SelectedValuePath="Path"
-                          SelectedValue="{Binding Path=SelectedHead}">
+                <ComboBox Grid.Row="1" Grid.Column="1" Margin="3"
+    ItemsSource="{Binding Source={StaticResource GroupedHeadAssets}}"
+    DisplayMemberPath="Name"
+    SelectedValuePath="Path"
+    SelectedValue="{Binding SelectedHead1}">
                     <ComboBox.GroupStyle>
                         <GroupStyle>
                             <GroupStyle.ContainerStyle>

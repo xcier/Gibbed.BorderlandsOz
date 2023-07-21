@@ -28,5 +28,15 @@ namespace Gibbed.BorderlandsOz.SaveEdit
         {
             this.InitializeComponent();
         }
+
+        private void ComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void ComboBox_SelectionChanged_1(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

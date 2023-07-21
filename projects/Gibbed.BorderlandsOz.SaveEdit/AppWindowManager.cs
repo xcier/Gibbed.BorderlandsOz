@@ -31,9 +31,9 @@ namespace Gibbed.BorderlandsOz.SaveEdit
 {
     internal class AppWindowManager : WindowManager
     {
-        private const string _WindowTitle = "Gibbed's Borderlands: The Pre-Sequel! Save Editor";
+        private const string _WindowTitle = "Gibbed's Borderlands: The Pre-Sequel! Save Editor Modified by ProtoBuffers";
         private const double _WindowWidth = 800.0 + 95.0;
-        private const double _WindowHeight = 560.0;
+        private const double _WindowHeight = 600.0;
         private const string _WindowIconPath = "pack://application:,,,/Resources/Jack.png";
 
         protected override Window EnsureWindow(object model, object view, bool isDialog)

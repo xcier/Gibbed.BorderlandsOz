@@ -5,9 +5,9 @@
     <AssemblyTitle>Gibbed's Borderlands: The Pre-Sequel! Save Editor</AssemblyTitle>
     <Company>Gibbed</Company>
     <Authors>Gibbed</Authors>
-    <Description>http://gib.me/</Description>
+    <Description>This save tool has been modified by ProtoBuffers</Description>
     <Copyright>Copyright © Gibbed 2019</Copyright>
-    <Version>1.0.0</Version>
+    <Version>2</Version>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <RepositoryUrl>https://github.com/gibbed/Gibbed.BorderlandsOz/</RepositoryUrl>
@@ -135,5 +135,18 @@
     <Resource Include="Resources\Jack.png" />
     <Resource Include="Resources\moonstone.png" />
     <Resource Include="Resources\Jack.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 </Project>

@@ -121,6 +121,8 @@ namespace Gibbed.BorderlandsOz.SaveEdit
                 new PlatformDisplay("360", Platform.X360),
                 new PlatformDisplay("PS3", Platform.PS3),
                 new PlatformDisplay("NVIDIA SHIELD", Platform.Shield),
+                new PlatformDisplay("Switch", Platform.Switch),
+                new PlatformDisplay("Decrypted PS4", Platform.PSVita),
             };
         }
 
